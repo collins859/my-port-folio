@@ -9,10 +9,12 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: navy;
+    background-image: url(collins.jpeg);
     padding: 1rem;
     text-align: center;
     display: flex;
+    color: #f4f4f4;
+    
 }
 
 nav ul {
@@ -33,7 +35,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, navy, #007BFF);
+    background-color: #0056b3;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -71,7 +73,8 @@ h2 {
 }
 
 .skills-list li {
-    background-color: navy;
+font-size: 20px;
+background-color: navy;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;

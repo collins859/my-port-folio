@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +9,21 @@
 <body>
     <header>
         <nav>
-            
-                <li> <a href="#profile">Profile</a></li>
+            <ul>
+                <li><a href="#profile">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+        <h1><marquee>WELCOME TO MY PORTFOLIO</marquee></h1>
     </header>
 
-    <section class="hero">
+    <div class="hero">
+        <img src="collins.jpeg" style="width: 100%;" alt="Chigozirim Collins">
         <h1>Chigozirim Collins</h1>
         <p>Front-End Web Developer | HTML, CSS, JavaScript</p>
-     
-    </section>
+    </div>
 
     <section id="profile">
         <h2>About Me</h2>
@@ -33,7 +35,7 @@
         <ul class="skills-list">
             <li>HTML</li>
             <li>CSS3 (Flexbox, Grid, Animations)</li>
-            <li>JavaScript </li>
+            <li>JavaScript</li>
             <li>Responsive Design</li>
             <li>Version Control (Git & GitHub)</li>
         </ul>
@@ -44,22 +46,37 @@
         <div class="project">
             <h3>Portfolio Website</h3>
             <p>A personal website showcasing my skills and projects.</p>
-            <a href="#" class="btn">View Project</a>
+            <a href="https://collins859.github.io/my-port-folio/" class="btn">View Project</a>
         </div>
         <div class="project">
-            <h3>calculator app</h3>
+            <h3>Calculator App</h3>
             <p>A JavaScript-based calculator that helps to solve mathematical problems.</p>
-            <a href="#" class="btn">View Project</a>
+            <a href="https://collins859.github.io/collins/" class="btn">View Project</a>
         </div>
         <div class="project">
-            <h3>A shopping list web page</h3>
-            <p>A JavaScript-based calculator that helps to solve mathematical problems.</p>
+            <h3>Shopping List Web Page</h3>
+            <p>A simple web app to keep track of your shopping items.</p>
             <a href="#" class="btn">View Project</a>
         </div>
-        <div class="project">
-            <h3>calculator app</h3>
-            <p>A JavaScript-based calculator that helps to solve mathematical problems.</p>
-            <a href="#" class="btn">View Project</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/collins859" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/collins" target="_blank">LinkedIn</a>
         </div>
     </section>
 
