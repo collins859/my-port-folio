@@ -1,115 +1,112 @@
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+*{
+   padding: 0;
+   margin: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   box-sizing: border-box;
 }
+body{
+    background-color: white;
+    color: black;
 
-/* Navigation Bar */
-nav {
-    background-image: url(collins.jpeg);
-    padding: 1rem;
-    text-align: center;
+}
+header{
+   width: 100%;
+   height: 100vh;
+   background-color: aliceblue; 
+   background-size: cover;
+   background-position: center;
+}
+.container{
+  padding: 3%;
+}
+img{
+    right:3%;
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    border-radius: 50px;
+}
+nav{
     display: flex;
-    color: #f4f4f4;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    top: 100%;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px ;
+}
+nav ul li a{
+    color: black;
+    text-decoration:aqua;
+    font-size: 18px;
+    position: relative;
+    top: 0%;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+   align-items: center;
     
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+button{
+    width: 120px;
+    height: 29px;
     color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+    background-color: blue;
+    font-size: 15px;
+    border: none;
 }
-
-/* Hero Section */
-.hero {
-    background-color: #0056b3;
-    color: white;
+.skill{
+    font-size: 30px;
     text-align: center;
-    padding: 50px 20px;
+    background-color: aliceblue;
+}
+ul .skill li{
+    font-size: 50px;
+}
+.skill {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.hero h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Sections */
-section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    color: navy;
-}
-
-/* Skills */
-.skills-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 0;
-}
-
-.skills-list li {
-font-size: 20px;
-background-color: navy;
-    color: white;
-    padding: 10px 20px;
+.progress {
+    width: 100%;
+    background: #ddd;
     border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
 }
 
-/* Projects */
-.project {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    color: navy;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: navy;
+.progress-bar {
+    height: 100%;
+    background: blue;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    text-align: left;
+    border-radius: 50px;
+    line-height: 25px;
+    font-size: 1px;
+    font-weight: bold;
+    width: 30%;
 }
-
-.btn:hover {
-    background: #0056b3;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: navy;
-    color: white;
+html{
+    scroll-behavior: smooth;
 }
